@@ -13,7 +13,7 @@ namespace HesapKitap.Application.Validators
         public UserValidator()
         {
             RuleFor(c => c.FirstName).NotEmpty().WithMessage("İsim Boş Geçilemez!!");
-            RuleFor(c => c.LastName).NotEmpty().WithMessage("Soy İsim Boş Geçilemez!!");
+            RuleFor(c => c.LastName).NotEmpty().WithMessage("Soyisim Boş Geçilemez!!");
             RuleFor(c => c.EMailAddress).NotEmpty().WithMessage("E-Mail adres Boş Geçilemez!!").EmailAddress().WithMessage("Email Geçersiz");
             RuleFor(c => c.Password).NotEmpty().WithMessage("Şifre Boş Geçilemez!!");
         }
